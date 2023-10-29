@@ -10,7 +10,7 @@
         <artifactId>ipcounter-spring-boot-starter</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </dependency>
-
+```
 3. 在application.yml文件中进行配置
 ![微信截图_20231029160848](https://github.com/Gallenzzz/ipcounter-spring-boot-starter/assets/80974945/21a2e23f-1a65-488d-9467-1176630de297)
 
@@ -22,3 +22,4 @@ gallen:
       cycle: 10
       cycle-reset: true
       store-in-redis: true
+```
