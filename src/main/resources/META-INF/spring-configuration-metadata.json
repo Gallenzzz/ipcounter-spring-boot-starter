@@ -1,0 +1,80 @@
+{
+  "groups": [
+    {
+      "name": "gallen.tools.ip",
+      "type": "com.gallen.ipcounter.config.IpProperties",
+      "sourceType": "com.gallen.ipcounter.config.IpProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "gallen.tools.ip.cycle",
+      "type": "java.lang.Long",
+      "description": "循环间隔(秒)",
+      "sourceType": "com.gallen.ipcounter.config.IpProperties",
+      "defaultValue": 5
+    },
+    {
+      "name": "gallen.tools.ip.cycle-reset",
+      "type": "java.lang.Boolean",
+      "description": "是否周期内重置",
+      "sourceType": "com.gallen.ipcounter.config.IpProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "gallen.tools.ip.print",
+      "type": "java.lang.Boolean",
+      "description": "是否直接输出",
+      "sourceType": "com.gallen.ipcounter.config.IpProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "gallen.tools.ip.store-in-redis",
+      "type": "java.lang.Boolean",
+      "description": "是否将数据存在Redis",
+      "sourceType": "com.gallen.ipcounter.config.IpProperties",
+      "defaultValue": false
+    }
+  ],
+  "hints": [
+    {
+      "name": "gallen.tools.ip.cycle-reset",
+      "values": [
+        {
+          "value": true,
+          "description": "开启周期重置."
+        },
+        {
+          "value": false,
+          "description": "不开启周期重置(默认)."
+        }
+      ]
+    },
+    {
+      "name": "gallen.tools.ip.print",
+      "values": [
+        {
+          "value": true,
+          "description": "输出统计信息(默认)."
+        },
+        {
+          "value": false,
+          "description": "不输出统计信息."
+        }
+      ]
+    },
+    {
+      "name": "gallen.tools.ip.store-in-redis",
+      "values": [
+        {
+          "value": true,
+          "description": "将统计信息保存到Redis中."
+        },
+        {
+          "value": false,
+          "description": "不将统计信息保存到Redis中(默认)."
+        }
+      ]
+    }
+  ]
+}
